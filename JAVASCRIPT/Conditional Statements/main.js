@@ -1,3 +1,19 @@
+console.log("--------------------------")
+console.log("---If...Else statements---")
+
+let sale = true;
+
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+} else {
+  console.log('Time to wait for a sale.');
+}
+
+console.log("------------------------")
+console.log("---The switch keyword---")
+
 let athleteFinalPosition = 'first place';
 
 switch (athleteFinalPosition) {
