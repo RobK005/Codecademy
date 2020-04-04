@@ -11,6 +11,17 @@ if(sale) {
   console.log('Time to wait for a sale.');
 }
 
+console.log("--------------------------")
+console.log("---Comparison Operators---")
+
+let hungerLevel = 7;
+
+if (7 <= hungerLevel) {
+  console.log('Time to eat!');
+} else {
+  console.log('We can eat later!');
+}
+
 console.log("------------------------")
 console.log("---The switch keyword---")
 
