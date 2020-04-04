@@ -1,5 +1,5 @@
-console.log("--------------------------")
-console.log("---If...Else statements---")
+console.log("--------------------------");
+console.log("---If...Else statements---");
 
 let sale = true;
 
@@ -11,8 +11,8 @@ if(sale) {
   console.log('Time to wait for a sale.');
 }
 
-console.log("--------------------------")
-console.log("---Comparison Operators---")
+console.log("--------------------------");
+console.log("---Comparison Operators---");
 
 let hungerLevel = 7;
 
@@ -22,8 +22,20 @@ if (7 <= hungerLevel) {
   console.log('We can eat later!');
 }
 
-console.log("------------------------")
-console.log("---The switch keyword---")
+console.log("-----------------------");
+console.log("---Logical Operators---");
+
+let mood = 'sleepy';
+let tirednessLevel = 6;
+
+if (mood === 'sleepy' && tirednessLevel > 8) {
+  console.log('time to sleep');
+} else {
+  console.log('not bed time yet');
+}
+
+console.log("------------------------");
+console.log("---The switch keyword---");
 
 let athleteFinalPosition = 'first place';
 
