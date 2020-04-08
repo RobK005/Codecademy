@@ -27,7 +27,7 @@ function makeShoppingList(item1='milk', item2='bread', item3='eggs') {
   console.log(`Remember to buy ${item3}`);
 };
 
-makeShoppingList('butter');
+makeShoppingList('butter','cheese');
 
 console.log('------------');
 console.log('---Return---');
@@ -50,3 +50,16 @@ function costOfMonitors(rows, columns) {
 const totalCost = costOfMonitors(5, 4);
 
 console.log(totalCost);
+
+console.log('--------------------------');
+console.log('---Function Expressions---');
+
+const plantNeedsWater = function (day) {
+  if (day === 'Wednesday') {
+    return true; 
+  } else {
+    return false;
+  }
+};
+
+console.log(plantNeedsWater('Tuesday'));
