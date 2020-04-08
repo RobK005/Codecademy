@@ -29,3 +29,13 @@ function makeShoppingList(item1='milk', item2='bread', item3='eggs') {
 
 makeShoppingList('butter');
 
+console.log('------------');
+console.log('---Return---');
+
+function monitorCount(rows, columns) {
+  return rows*columns;
+};
+
+const numOfMonitors = monitorCount(5, 4);
+
+console.log(numOfMonitors);
