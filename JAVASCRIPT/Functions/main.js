@@ -56,10 +56,23 @@ console.log('---Function Expressions---');
 
 const plantNeedsWater = function (day) {
   if (day === 'Wednesday') {
-    return true; 
+    return true;
   } else {
     return false;
   }
 };
 
 console.log(plantNeedsWater('Tuesday'));
+
+console.log('---------------------');
+console.log('---Arrow Functions---');
+
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(plantNeedsWater('Wednesday'));
