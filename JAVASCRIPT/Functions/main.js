@@ -76,3 +76,10 @@ const plantNeedsWater = (day) => {
 };
 
 console.log(plantNeedsWater('Wednesday'));
+
+console.log('----------------------------------');
+console.log('---Concise Body Arrow Functions---');
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+console.log(plantNeedsWater('Wednesday'));
