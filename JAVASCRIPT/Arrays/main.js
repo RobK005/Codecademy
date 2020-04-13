@@ -16,6 +16,13 @@ groceryList[1] = 'butter'
 
 console.log(groceryList);
 
+console.log('--------------------------');
+console.log('---The .length property---');
+
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+
+console.log(objectives.length);
+
 console.log('-------------------------------');
 console.log('---Arrays with let and const---');
 
