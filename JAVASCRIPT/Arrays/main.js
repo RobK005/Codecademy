@@ -38,3 +38,11 @@ console.log(condiments);
 
 utensils[utensils.length-1] = 'Spoon';
 console.log(utensils);
+
+console.log('------------------------');
+console.log('---The .push() Method---');
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+
+chores.push('clean floor', 'make the bed');
+console.log(chores)
