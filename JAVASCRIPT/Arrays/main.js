@@ -46,3 +46,11 @@ const chores = ['wash dishes', 'do laundry', 'take out trash'];
 
 chores.push('clean floor', 'make the bed');
 console.log(chores)
+
+console.log('-----------------------');
+console.log('---The .pop() Method---');
+
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+chores.pop(); // removes the last item from array
+console.log(chores);
