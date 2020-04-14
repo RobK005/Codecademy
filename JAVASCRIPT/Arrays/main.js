@@ -54,3 +54,18 @@ const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'm
 
 chores.pop(); // removes the last item from array
 console.log(chores);
+
+console.log('------------------------');
+console.log('---More Array Methods---');
+
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+groceryList.shift(); // remove the first item from the array
+groceryList.unshift('popcorn'); // adding element to the beginning of the array
+console.log(groceryList);
+
+console.log(groceryList.slice(1,4)); 
+console.log(groceryList);
+
+const pastaIndex = groceryList.indexOf('pasta');
+console.log(pastaIndex);
