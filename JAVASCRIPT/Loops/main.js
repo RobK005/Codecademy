@@ -49,3 +49,16 @@ while (currentCard !== 'spade') {
   currentCard = cards[Math.floor(Math.random() * 4)];
   console.log(currentCard);
 };
+
+console.log('---------------------------');
+console.log('---Do...While Statements---');
+
+let cupsOfSugarNeeded = 4;
+let cupsAdded = 0;
+
+do {
+  cupsAdded++;
+}
+while (cupsOfSugarNeeded > cupsAdded);
+
+console.log(`I've just added ${cupsAdded} cup(s) of sugar, that's enough for me`);
