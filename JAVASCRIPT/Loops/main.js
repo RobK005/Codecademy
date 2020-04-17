@@ -37,3 +37,15 @@ for (let i = 0; i < bobsFollowers.length; i++) {
 };
 
 console.log(mutualFollowers);
+
+console.log('--------------------');
+console.log('---The While Loop---');
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Until the chosen card is not spade, choose another
+let currentCard = [];
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+};
