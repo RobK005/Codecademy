@@ -62,3 +62,17 @@ do {
 while (cupsOfSugarNeeded > cupsAdded);
 
 console.log(`I've just added ${cupsAdded} cup(s) of sugar, that's enough for me`);
+
+console.log('-----------------------');
+console.log('---The break Keyword---');
+
+const SuperCarsArray = ["Maserati", "Ferrari", "McLaren", "Lamborghini"];
+
+for (let i = 0; i < SuperCarsArray.length; i++) {
+  if (SuperCarsArray[i] === 'Ferrari' ) {
+    console.log(SuperCarsArray[i]);
+    break;
+  };
+  console.log(SuperCarsArray[i]);
+};
+console.log("After Ferrari, we don't need to mention further");
