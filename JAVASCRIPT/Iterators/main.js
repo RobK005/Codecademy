@@ -38,3 +38,14 @@ const longFavoriteWords = favoriteWords.filter(word => word.length > 7);
 
 console.log(smallNumbers);
 console.log(longFavoriteWords);
+
+console.log('-----------------------------');
+console.log('---The .findIndex() Method---');
+
+const wildAnimals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = wildAnimals.findIndex(animal => animal === 'elephant');
+console.log(foundAnimal);
+
+const startsWithS = wildAnimals.findIndex(animal => animal[0] === 's');
+console.log(startsWithS);
