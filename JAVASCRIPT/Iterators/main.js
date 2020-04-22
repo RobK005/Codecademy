@@ -49,3 +49,16 @@ console.log(foundAnimal);
 
 const startsWithS = wildAnimals.findIndex(animal => animal[0] === 's');
 console.log(startsWithS);
+
+console.log('--------------------------');
+console.log('---The .reduce() Method---');
+
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+}, 10); // <- initial accumulator
+
+console.log(newSum); // Output: 26
