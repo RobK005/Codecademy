@@ -62,3 +62,32 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
 }, 10); // <- initial accumulator
 
 console.log(newSum); // Output: 26
+
+console.log('----------------------------------');
+console.log('---More examples, other methods---');
+
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//  A method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+
+// A method that will return a new array
+const longCities = cities.filter(city => city.length > 7);
+
+// A method that will return a single value
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+
+console.log(word)
+
+// A method that will return a new array
+const smallerNums = nums.map(num => num - 5);
+
+// .SOME method that will return a boolean value
+console.log(nums.some(num => num < 0));
+
+// .EVERY method that will return a boolean value
+console.log(nums.every(num => num > 0));
