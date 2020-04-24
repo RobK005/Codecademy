@@ -7,7 +7,8 @@ let spaceship = {
   'Fuel Type': 'Turbo Fuel',
   'Active Mission' : true,
   numCrew: 5,
-  flightPath: ['Venus', 'Mars', 'Saturn']
+  flightPath: ['Venus', 'Mars', 'Saturn'],
+  'Secret Mission' : 'Discover life outside of Earth.'
 };
 
 const crewCount = spaceship.numCrew;
@@ -22,4 +23,12 @@ const shipFuel = spaceship['Fuel Type'];
 let propName =  'Active Mission';
 
 console.log(shipFuel);
-console.log(spaceship[propName])
+console.log(spaceship[propName]);
+
+console.log('-------------------------');
+console.log('---Property Assignment---');
+
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 6;
+
+delete spaceship['Secret Mission'];
