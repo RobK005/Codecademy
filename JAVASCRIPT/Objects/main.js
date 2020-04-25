@@ -49,3 +49,42 @@ const alienShip = {
 
 alienShip.retreat();
 alienShip.takeOff();
+
+console.log('--------------------');
+console.log('---Nested Objects---');
+
+let spaceship2 = {
+  passengers: [{name: 'Space cowboy', age: 24}],
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032 
+  },
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] 
+    }
+  },
+  engine: {
+    model: "Nimbus2000"
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+    backup: {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  }
+}; 
+
+let capFave = spaceship2.crew.captain['favorite foods']['0'];
+let firstPassenger = spaceship2.passengers[0];
+
+console.log(capFave);
+console.log(firstPassenger.name);
