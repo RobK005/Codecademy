@@ -108,3 +108,38 @@ let remotelyDisable = obj => {
 futureEnergy(spaceship3);
 remotelyDisable(spaceship3);
 console.log(spaceship3);
+
+console.log('-----------------------------');
+console.log('---Looping Through Objects---');
+
+let spaceship4 = {
+    crew: {
+    captain: { 
+        name: 'Shepard', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+for (let crewMember in spaceship4.crew) {
+  console.log(`${crewMember}: ${spaceship4.crew[crewMember].name}`);
+};
+
+for (let crewMember in spaceship4.crew) {
+  console.log(`${spaceship4.crew[crewMember].name}: ${spaceship4.crew[crewMember].degree}`);
+};
