@@ -88,3 +88,23 @@ let firstPassenger = spaceship2.passengers[0];
 
 console.log(capFave);
 console.log(firstPassenger.name);
+
+console.log('-----------------------');
+console.log('---Pass By Reference---');
+
+const spaceship3 = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+let futureEnergy = obj => {
+  obj['Fuel Type'] = 'Warp juice'
+}
+
+let remotelyDisable = obj => {
+  obj.disabled = true
+}
+
+futureEnergy(spaceship3);
+remotelyDisable(spaceship3);
+console.log(spaceship3);
