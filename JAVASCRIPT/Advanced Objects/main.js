@@ -110,3 +110,25 @@ function robotFactory2(model, mobile){
 const newRobot = robotFactory2('R2-D2', false);
 console.log(newRobot.model);
 console.log(newRobot.mobile);
+
+console.log('-----------------------------');
+console.log('---Destructured Assignment---');
+
+const robot5 = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    talk() {
+      console.log('Destrooooy!');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+const { talk } = robot5.functionality;
+talk();
+
+const { functionality } = robot5;
+functionality.fireLaser();
