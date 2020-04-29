@@ -132,3 +132,23 @@ talk();
 
 const { functionality } = robot5;
 functionality.fireLaser();
+
+console.log('-----------------------------');
+console.log('---Built-in Object Methods---');
+
+const robot6 = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+const robotKeys = Object.keys(robot6);
+console.log(robotKeys);
+
+const robotEntries = Object.entries(robot6);
+console.log(robotEntries);
+
+const newRobot2 = Object.assign({laserBlaster: true, voiceRecognition: true}, robot6);
+console.log(newRobot2);
