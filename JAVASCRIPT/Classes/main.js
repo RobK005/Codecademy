@@ -47,3 +47,51 @@ console.log(surgeonDurant.takeVacationDays(5));
 console.log(surgeonCurry.name);
 surgeonCurry.takeVacationDays(3);
 console.log(surgeonCurry.remainingVacationDays);
+
+console.log('---------------------------------');
+console.log('---Inheritance, Static Methods---');
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  
+  get name() {
+    return this._name;
+  }
+  
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  
+  static generatePassword() {
+    return Math.floor(Math.random()*10001);
+  }
+};
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  } 
+  
+  get certifications() {
+    return this._certifications;
+  }
+  
+  addCertification(newCertification) {
+    this.certifications.push(newCertification);
+  }
+};
+
+const nurseKaren = new Nurse('Karen', ['Trauma','Pediatrics']);
+nurseKaren.takeVacationDays(5);
+console.log(nurseKaren.remainingVacationDays);
+
+nurseKaren.addCertification('Genetics');
+console.log(nurseKaren.certifications);
